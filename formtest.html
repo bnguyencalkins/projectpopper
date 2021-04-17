@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<lang="eng">
+
+<head>
+	<meta charset="utf-8">
+	<title>Submit a Project</title>
+	<meta name="author" content="Brandon Nguyen-Calkins">
+	<meta name="description" content="Explore undergraduate projects in the field of technical communication.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/spotlight.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="./js/papaparse.js"></script>
+
+</head>
+
+<body>
+<header class="text-center text-white">
+	<div class="container mt-3 text-center">
+    <h1>Submit a Project</h1>
+	<div class="row">
+		<div class="col">
+			<span class="subtitle"><a href="index.html">Home</a></span>
+		</div>
+		<div class="col">
+			<span><a href="#!">About</a></span>
+		</div>
+	</div>
+	</div>
+</header>
+
+<div class="container mt-3" id="placeholder">
+
+</div>
+
+<script>
+	let collectedarray;
+
+	const csvData = Papa.parse('js/Log.csv', {
+		download: true,
+		dynamicTyping: true,
+		delimiter: "",	// auto-detect
+		newline: "",	// auto-detect
+		complete: function(result) {
+			document.getElementById('placeholder').innerHTML = result.data;
+			console.log(result.data);
+		}
+	}) 
+
+</script>
+</body>
+
+</html>
