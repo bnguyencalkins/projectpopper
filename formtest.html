@@ -17,39 +17,23 @@
 </head>
 
 <body>
-<header class="text-center text-white">
-	<div class="container mt-3 text-center">
-    <h1>Submit a Project</h1>
-	<div class="row">
-		<div class="col">
-			<span class="subtitle"><a href="index.html">Home</a></span>
+	<header class="container-fluid ">
+		<div class="row">
+			<div class="col-2"><img class="" src="#" width="150px" height="150px"></div>
+			<div class="col-8"><div class="row justify-content-start"><h1 class=" text-white">TC Popper</h1></div><div class="row"><p class="subtitle">Take a bite outta' TC!</p></div>
+		
 		</div>
-		<div class="col">
-			<span><a href="#!">About</a></span>
+		
+		<div class="text-center">
+			<button id="submit" onclick="parent.location='formtest.html'">Submit a Project</button>
 		</div>
-	</div>
-	</div>
-</header>
+	</header>
 
-<div class="container mt-3" id="placeholder">
-
+<div class="container mt-3">
+	<iframe class="container text-center" src="https://docs.google.com/forms/d/e/1FAIpQLSd2Xp6_HGZuz8PyWvUtGefrwtRUrYvyEmQJbUINpz5zoLHmHA/viewform?embedded=true" width="700" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
 
-<script>
-	let collectedarray;
 
-	const csvData = Papa.parse('js/Log.csv', {
-		download: true,
-		dynamicTyping: true,
-		delimiter: "",	// auto-detect
-		newline: "",	// auto-detect
-		complete: function(result) {
-			document.getElementById('placeholder').innerHTML = result.data;
-			console.log(result.data);
-		}
-	}) 
-
-</script>
 </body>
 
 </html>
