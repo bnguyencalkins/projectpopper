@@ -28,7 +28,7 @@ const csvData = Papa.parse(logLink, {
           case 'Timestamp': { return 'Date'; break; }
           case 'What is your name?': { return 'Author'; break; }
           case 'What is the Title of your Project?': { return 'Title'; break; }
-          case 'What field of study does your project include? [Choices]': { return 'Field'; break; }
+          case 'What field of study does your project prioritize? [Choices]': { return 'Field'; break; }
           case 'What\'s a short description of your project?': { return 'Overview'; break; }
           case 'Would you consider your project successful?': { return 'Success'; break; }
           case 'Is there anything you would have done differently? If so, what?': { return 'Changes'; break; }
