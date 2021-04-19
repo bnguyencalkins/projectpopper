@@ -43,16 +43,62 @@ const csvData = Papa.parse(logLink, {
 
 function makeCards(data) {
     for (i = 0; i < data.length; i++) {
-        var title = data[i].Title;
-        var author = data[i].Author;
-        var date = data[i].Date;
-        var field = data[i].Field;
-        var overview = data[i].Overview;
-        var success = data[i].Success;
-        var changes = data[i].Changes;
+        // Name all of the variables from the Google Sheet data
+        var title = document.createTextNode(data[i].Title);
+        var author = document.createTextNode(data[i].Author);
+        var date = document.createTextNode(data[i].Date);
+        var field = document.createTextNode(data[i].Field);
+        var overview = document.createTextNode(data[i].Overview);
+        var success = document.createTextNode(data[i].Success);
+        var changes = document.createTextNode(data[i].Changes);
+        
+        // Creates destination- the div ID 'holder for easier reference
+        var destination = document.getElementById('holder');
 
 
-        document.getElementById('holder').innerHTML = title + '<br>' + overview;
+        // Creates a div element, then gives it a class (card)
+        var card = document.createElement("DIV");
+        card.classList.add("card");
+        // Creates card body div, then card-text p
+        var cardBody = document.createElement("DIV");
+        cardBody.classList.add("card-body");
+        // Creates Overview h3, then overview body
+        cardBody.innerHTML += '<h3>Overview</h3>';
+        p = document.createElement("P");
+        p.classList.add("card-text");
+        p.appendChild(overview);
+        cardBody.appendChild(p);
+        // Creates Success? h3, then success and changes answers
+        cardBody.innerHTML += "<h3>Was it successful?</h3>";
+        cardBody.appendChild(success);
+        cardBody.innerHTML += "<br>";
+        cardBody.appendChild(changes);
+        
+        //creates h1 Title
+        var h1 = document.createElement("H1");
+        h1.appendChild(title);
+
+        //Creates span badge for field
+        var badge = document.createElement("SPAN");
+        badge.classList.add("badge", "badge-secondary", "d-block");
+        badge.appendChild(field);
+        
+        //creates subtitle above h1
+        var subtitle = document.createElement("P");
+        subtitle.classList.add("card-subtitle");
+        subtitle.appendChild(author);
+
+        // Add everything to card
+        card.appendChild(subtitle);
+        card.appendChild(h1);
+        card.appendChild(date);
+        card.appendChild(badge);
+        card.appendChild(cardBody);
+
+
+        // Adds card to destination
+        destination.appendChild(card);
+        
+
     }
 }
-

@@ -1,0 +1,79 @@
+﻿name,rarity,metric_1,metric_2,effect_1,effect_2,synergies,counters,img link
+Barbecue and Chilli,Cannibal Teachable,aura,bloodpoint,Auras of all survivors further than 40 meters are revealed after hooking someone,Gain a 25% bloopoint boost from each new survivor hooked,Pop Goes the Weasel,na,img/IconPerks_barbecueAndChilli.png
+Corrupt Intervention,Plague Teachable,slowdown,na,The 3 furthest generators are blocked by the entity for 2 minutes,na,Discordance,na,img/IconPerks_corruptIntervention.png
+Pop Goes the Weasel,Clown Teachable,slowdown,na,Break 25% of a generator's progress after hooking someone,na,Oppression,na,img/IconPerks_popGoesTheWeasel.png
+Ruin,Hag Teachable,hex,slowdown,200% generator regression rate,na,Undying,na,img/IconPerks_hexRuin.png
+Infectious Fright,Plague Teachable,snowball,tracker,Reveal nearby survivors for 6 seconds when you put someone in the dying state,na,Unrelenting,na,img/IconPerks_infectiousFright.png
+Tinkerer,Hillbilly Teachable,stealth,slowdown,Receive a loud noise event when a generator reaches 70%,You are undetectable for 16 seconds,Surveillance,na,img/IconPerks_tinkerer.png
+Undying,Blight Teachable,hex,aura,All survivors within 2 meters of a totem are revealed for 6 seconds,Transfer other cleansed hex perks to an available dull totem,other hex perks,na,img/IconPerks_hexUndying.png
+A Nurse's Calling,Nurse Teachable,aura,wounds,Aura of all healing survivors within 28 meters are revealed.,na,Sloppy Butcher,na,img/IconPerks_aNursesCalling.png
+Monitor and Abuse,Doctor Teachable,terror,stealth,Increase terror radius by 8 meters while in a chase,Decrease terror radius by 8 meters and increase FOV by 10 degrees out of chases,Furtive Chase,na,img/IconPerks_monitorAndAbuse.png
+Discordance,Legion Teachable,aura,isolating,Auras of generators are highlighted when 2 or more survivors are working on it,na,Infectious Fright,na,img/IconPerks_discordance.png
+Save the Best for Last,Shape Teachable,obsession,slashing,Gain a 5% cool-down reduction on successful basic hits each time you hit anyone other than the obsession,Lose 2 tokens each time you hit the obsession. Lose the perk if the obsession is sacrificed,Sloppy Butcher,na,img/IconPerks_saveTheBestForLast.png
+Thrilling Tremors,Ghostface Teachable,slowdown,na,All generators not being repaired are blocked by the entity for 16 seconds when you pick up a dying survivor,na,Infectious Fright,na,img/IconPerks_thrillingTremors.png
+Surveillance,Pig Teachable,aura,tracker,Regressing generators are highlighted in a white aura. ,Generator repair noises are increased by 8 meters,Ruin,na,img/IconPerks_surveillance.png
+Sloppy Butcher,All Killers,slowdown,tracker,Considerably increase bleeding,Cause the mangled status effect,Thanatophobia,na,img/IconPerks_sloppyButcher.png
+Whispers,All Killers,tracker,na,Hear the entity whisper in your ears when a survivor is within 32 meters,na,Corrupt Intervention,na,img/IconPerks_whispers.png
+Thanatophobia,Nurse Teachable,slowdown,na,"5% penalty to all actions other than healing for each injured, hooked, or dying survivor",20% penalty maximum.,,na,img/IconPerks_thanatophobia.png
+Oppression,Twins Teachable,skillchecks,slowdown,3 other random generators begin regressing when you kick a generator,Survivors receive a difficult skill check if they are repairing the affected generator,"Pop Goes the Weasel, Brutal Strength",na,img/IconPerks_oppression.png
+Bitter Murmur,All Killers,aura,na,Auras of all survivors within 16 meters are highlighted for 5 seconds when the generator is repaired,Aura of all survivors are revealed for 10 seconds after the last generator is repaired,Cruel Limits,na,img/IconPerks_bitterMurmur.png
+Enduring,Hillbilly Teachable,chase,recovery,50% reduced pallet stuns,na,"Nemesis, Spirit Fury",na,img/IconPerks_enduring.png
+Make Your Choice,Pig Teachable,expose,na,Hook rescuers receive exposed status for 60 seconds if you are at least 32 meters away from the hooked survivor,na,Furtive Chase,na,img/IconPerks_makeYourChoice.png
+I'm All Ears,Ghostface Teachable,aura,chase,Auras of any survivors performing a rushed action within 48 meters are revealed for 6 seconds.,na,,na,img/IconPerks_imAllEars.png
+Bamboozle,Clown Teachable,chase,na,15% faster vault speeds,Block the vaulted location for 16 seconds,,na,img/IconPerks_bamboozle.png
+Haunted Grounds,Spirit Teachable,hex,expose,All survivors are exposed for 60 seconds if one of the two trapped totems are cleansed,na,"Retribution, Undying",na,img/IconPerks_hexHauntedGround.png
+Lightborn,Hillbilly Teachable,recovery,aura,Immune to being blinded,Aura of any survivor attempting to blind you is revealed for 10 seconds,,na,img/IconPerks_lightborn.png
+Remember Me,Nightmare Teachable,endgame,obsession,Increase the exit gate opening time for each time you hit the obsession,na,Rancor,na,img/IconPerks_rememberMe.png
+Devour Hope,Hag Teachable,expose,snowball,Receive a token for each time a survivor is unhooked and you are further than 24 meters,2 tokens: gain a 5% haste effect for 10 seconds. 3 tokens: all survivors are exposed. 5 tokens: mori anyone,BBQ and Chilli,na,img/IconPerks_hexDevourHope.png
+Play with Your Food,Shape Teachable,obsession,speed,"Each time you let your obsession escape a chase, gain a token (max 3 tokens.)",Each token increases movement speeds by 5%. Consume a token for each basic attack performed,,na,img/IconPerks_playWithYourFood.png
+Trail of Torment,Executioner Teachable,stealth,na,Become undetectable after kicking a generator,Kicked generator becomes highlighted for survivors,Dragon's Grip,na,img/IconPerks_trailOfTorment.png
+Surge,Demogorgon Teachable,slowdown,dying state,All generators within 32 meters explode and begin regressing after hitting a survivor into dying state,Affected generators instantly lose 8% repair progress,Discordance,na,img/IconPerks_surge.png
+Brutal Strength,Trapper Teachable,chase,na,"20% faster actions when destroying pallets, breakable walls, and generators",na,Spirit Fury,na,img/IconPerks_brutalStrength.png
+Stridor,Nurse Teachable,tracker,na,Survivors' breathing is 25% louder,Survivors' grunts of pain are 50% louder,Whispers,na,img/IconPerks_stridor.png
+Rancor,Spirit Teachable,aura,obsession,Auras of all survivors are revealed for 3 seconds after each generator is completed. The obsession sees your aura for 3 seconds,"The obsession beomes exposed after all generators are completed, allowing you to mori them.",Save the Best for Last,na,img/IconPerks_rancor.png
+Blood Warden,Nightmare Teachable,aura,endgame,Block both exit gates for 60 seconds once you hook someone after a gate is opened,Auras of all survivors within the exit gate areas are revealed,No One Escapes Death,na,img/IconPerks_bloodWarden.png
+Spirit Fury,Spirit Teachable,chase,na,"After breaking 2 pallets, the next pallet stun will instantly break",na,Zanshin Tactics,na,img/IconPerks_spiritFury.png
+Dragon's Grip,Blight Teachable,expose,tracker,"For 30 seconds after kicking a generator, survivors that work on the generator suffer from an exposed status and scream, revealing their location",na,"Pop Goes the Weasel, Trail of Torment",na,img/IconPerks_dragonsGrip.png
+No One Escapes Death,All Killers,hex,endgame,All survivors are exposed once the exit gates are powered. ,Receive a 4% movement speed.,Bloodwarden,na,img/IconPerks_hexNoOneEscapesDeath.png
+Huntress Lullaby,Huntress Teachable,hex,skillchecks,Survivors receive 6% regression penalty for missed skill checks,"Each time a survivor is hooked, increase the skill check difficulty- eventually silencing skill check sound warnings","Overcharged, Pop Goes the Weasel",na,img/IconPerks_hexHuntressLullaby.png
+Dying Light,Shape Teachable,obsession,slowdown,Gain a token for each survivor hooked other than the obsession.,"All survivors receive a 3% penalty to repair, healing, and sabotage actions for each token. The Obsession recieves a 33% speed boost to unhooking and healing",Blood Echo,na,img/IconPerks_dyingLight.png
+Franklin's Demise,Cannibal Teachable,items,na,Force survivors to drop their items when hit with a basic attack,Dropped items are highlighted with a fading aura and are lost after 90 seconds,Sloppy Butcher,na,img/IconPerks_franklinsDemise.png
+Retribution,Deathslinger Teachable,hex,aura,Survivors that clear a dull totem are oblivious for 45 seconds,Auras of all survivors are revealed if a hex totem is cleared,Haunted Grounds,na,img/IconPerks_retribution.png
+Knock Out,Cannibal Teachable,blinding,isolating,Auras of survivors put into the dying state are hidden from their teammates,Dying survivors crawl 50% and are blind for 15 seconds,Infectious Fright,na,img/IconPerks_knockOut.png
+Distressing,All Killers,terror,bloodpoint,26% increase to terror radius,100% more bloodpoints in the deviousness category,Overwhelming Presence,na,img/IconPerks_distressing.png
+Agitation,Trapper Teachable,terror,carrying,18% movement speeds when carrying a survivor,Terror Radius is increased by 12 meters when carrying a survivor,Iron Grasp,na,img/IconPerks_agitation.png
+Dark Devotion,Plague Teachable,terror,stealth,Hitting the obsession with a basic attack transfers the terror radius to the obsession for 30 seconds,You are undetectable for the duration,Furtive Chase,na,img/IconPerks_darkDevotion.png
+Hangman's Trick,Pig Teachable,aura,na,Gain a notification when a survivor begins sabotaging a hook,Auras of any survivor within 6 meters of a hook are revealed,Mad Grit,na,img/IconPerks_hangmansTrick.png
+Deathbound,Executioner Teachable,wounds,tracker,Survivors scream and reveal their locations when healing further than 32 meters from you,Screaming survivors suffer from the oblivious state when further than 8 meters from the healed survivor,A Nurses Calling,na,img/IconPerks_deathbound.png
+Dead Man's Switch,Deathslinger Teachable,slowdown,obsession,"Once you hook the obsession, the entity blocks generators any time a survivor stops repairing a generator.",Affected generators are highlighted with a white aura,Blood Echo,na,img/IconPerks_deadMansSwitch.png
+Nemesis,Oni Teachable,obsession,aura,Any survivor who stuns or blinds you becomes the obsession,Survivors become oblivious and their auras are revealed to you each time a survivor becomes the obsession,Furtive Chase,na,img/IconPerks_nemesis.png
+Overcharge,Doctor Teachable,skillchecks,na,Force a tremendously difficult skillcheck after damaging a generator,5% progress loss for missing the skill check- no bonus for succeeding it,Pop Goes the Weasel,na,img/IconPerks_overcharge.png
+Spies From the Shadows,All Killers,tracker,na,Crows give you a visual cue each time they are disturbed within 36 meters,na,Distressing,na,img/IconPerks_spiesFromTheShadows.png
+Fire Up,Nightmare Teachable,speed,na,Gain 4% boost to all actions after each generator is repaired,na,Bitter Murmurs,na,img/IconPerks_fireUp.png
+Shadowborn,Wraith Teachable,vision,na,15 degree increase to FOV,na,Stridor,na,img/IconPerks_shadowborn.png
+Coup de Grace,Twins Teachable,slashing,na,Gain a token for each generator repaired,Each token increases lunge attack by 60%,Fire Up,na,img/IconPerks_coupDeGrace.png
+Blood Echo,Oni Teachable,exhaustion,na,All survivors suffer from haemorrhage and exhuastion for 45 seconds after you hook someone,na,Tinkerer,na,img/IconPerks_bloodEcho.png
+Iron Maiden,Legion Teachable,expose,tracker,50% faster at opening lockers,Survivors exiting a locker become exposed for 15 seconds and their location is revealed for 4 seconds,,na,img/IconPerks_ironMaiden.png
+Unnerving Presence,Trapper Teachable,terror,skillchecks,10% higher likelihood to trigger a skill check for survivors inside your terror radius,Triggered skill check success zones are reduced by 60%,Distressing,na,img/IconPerks_unnervingPresence.png
+Mad Grit,Legion Teachable,slashing,carrying,Suffer no cool-downs on missed attacks while carrying a survivor,Pause the wiggle timer for 4 seconds when you hit another survivor.,Agitation,na,img/IconPerks_madGrit.png
+Iron Grasp,All Killers,carrying,na,75% reduction to struggle effects,12% longer time required to wiggle out of your grasp,Agitation,na,img/IconPerks_ironGrasp.png
+The Third Seal,Hag Teachable,hex,blinding,The last 4 survivors hit with a basic attack are blind,na,,na,img/IconPerks_hexTheThirdSeal.png
+Forced Penance,Executioner Teachable,expose,na,Survivors who take a protection hit are broken for 80 seconds,na,A Nurses Calling,na,img/IconPerks_forcedPenance.png
+Deerstalker,All Killers,aura,dying state,Auras of all dying survivors are revealed within 36 meters,na,Infectious Fright,na,img/IconPerks_deerstalker.png
+Thrill of the Hunt,All Killers,hex,bloodpoint,Reduce cleansing speeds by 6% and gain a notification each time someone starts cleansing a hex totem,Gain 10% more bloodpoints in the hunter category for each totem remaining,hex perks,na,img/IconPerks_hexThrillOfTheHunt.png
+Mindbreaker,Demogorgon Teachable,exhaustion,na,Survivors are exhausted when they repair generators,na,Tinkerer,na,img/IconPerks_mindbreaker.png
+Bloodhound,Wraith Teachable,tracker,slashing,Pools of blood are BRIGHT,Pools of blood remain for 4 seconds longer,Sloppy Butcher,na,img/IconPerks_bloodhound.png
+Coulrophobia,Clown Teachable,terror,wounds,50% penalty to healing speeds for survivors within your terror radius,na,Distressing,na,img/IconPerks_coulrophobia.png
+Unrelenting,All Killers,slashing,na,30% cooldown reduction to missed basic attacks,na,Sloppy Butcher,na,img/IconPerks_unrelenting.png
+Blood Favour,Blight Teachable,chase,na,All pallets within 16 meters of a basic attack are blocked for 15 seconds,na,Zanshin Tactics,na,img/IconPerks_bloodFavour.png
+Cruel Limits,Demogorgon Teachable,chase,na,All vault locations within 32 meters of a repaired generator are blocked for 30 seconds,na,Bitter Murmurs,na,img/IconPerks_cruelLimits.png
+Territorial Imperative,Huntress Teachable,basement,aura,Auras of survivors entering the basement are revealed for 3 seconds if you are further than 32 meters,na,Monstrous Shrine,na,img/IconPerks_territorialImperative.png
+Insidious,All Killers,stealth,na,Become undetectable after standing still for 2 seconds,na,Spies from the Shadows,na,img/IconPerks_insidious.png
+Furtive Chase,Ghostface Teachable,terror,obsession,Decrease your terror radius by 4 meters each time you hook the Obsession,Rescuers become the new Obsession after unhooking a survivor,Monitor and Abuse,na,img/IconPerks_furtiveChase.png
+Zanshin Tactics,Oni Teachable,chase,aura,"All pallets, breakable walls, and vaults within 24 meters are revealed",na,Bamboozle,na,img/IconPerks_zanshinTactics.png
+Beast of Prey,Huntress Teachable,terror,bloodpoint,Become undetectable after gaining bloodlust tier 1.,50% more bloodpoints for hunting category,I'm All Ears,na,img/IconPerks_beastofPrey.png
+Gearhead,Deathslinger Teachable,snowball,aura,Aura of generator is highlighted when survivors hit a good skillcheck,Only works for 30 seconds after hitting a survivor twice with your basic attack,Unrelenting,na,img/IconPerks_gearhead.png
+Predator,Wraith Teachable,tracker,na,Scratch marks spawn considerably closer together,na,,na,img/IconPerks_predator.png
+Hoarder,Twins Teachable,items,na,Gain a loud noise notification for 4 seconds when survivors pick up an item or interact with a chest,2 additional chests spawn in the trial,Franklin's Demise,na,img/IconPerks_hoarder.png
+Monstrous Shrine,All Killers,basement,na,"9% faster sacrifice progression, 15% difficulty in hook escapes, and 9% penalty to missed hook attempts",na,,na,img/IconPerks_monstrousShrine.png
+Overwhelming Presence,Doctor Teachable,terror,items,100% item consumption rate for survivors within your terror radius,na,Distressing,na,img/IconPerks_overwhelmingPresence.png
