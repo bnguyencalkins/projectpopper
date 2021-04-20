@@ -1,68 +1,69 @@
 h1, h2 {
-  font-family: 'Noto Sans TC', sans-serif;
-  font-weight: 800;
-  font-size: 6vh;
+  font-family: 'Roboto', sans-serif;
 }
 
-.subtitle {
-  padding-left: 75px;
-  color: white;
+h1 {
+  font-weight: 800;
+  font-size: 5vh;
+}
+
+h2 {
+  font-size: 3.5vh;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 20px;
 }
 
 header {
   background-color: #26408B;
-  padding-bottom: 10px;
   padding-top: 10px;
 }
 
-header h1 {
-  font-size: 10vh;
-  text-shadow: black;
+/* Customizes Navbar */
+.navbar {
+  color: #fff;
 }
 
-.navs {
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 20px;
-    border: rgba(0, 0, 0, 0);
-    background-color: #A61C3C;
+#navbar-title {
+  font-size: 6.5vh;
+  display: block;
+  font-family: 'Coda Caption', sans-serif;
 }
 
-.navs:focus {
-  outline: none;
+#navbar-subtitle {
+  font-size: 2vh;
+  padding-left: 2.25rem;
 }
 
-.arrow {
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-  
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
+.navbar a {
+  color: #fff;
+}
 
-  .index {
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    width: 1.25em;
-    height: 0.8em;
-    border-top: 0.25em solid white;
-    border-bottom: 0.25em solid white;
+.navbar-toggler {
+  background-color: #A61C3C;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.navbar-toggler:hover {
+  background-image: url(../img/navbar-toggler-icon-hover.png);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+
+.navbar-nav ul li{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: light;
+}
+
+.nav-link:hover {
+  background-color: #A61C3C;
 }
 
 .list-group-item {
@@ -100,7 +101,7 @@ header h1 {
 }
 
 .card:hover {
-  transform: scale(1.05, 1.05) ;
+  transform: scale(1.01, 1.01) ;
 }
 
 .card-title {
@@ -111,10 +112,18 @@ header h1 {
 font-style: italic;
 font-weight: light;
 color: rgba(0, 0, 0, 0.5);
+font-size: 0.8rem;
+text-align: center;
 }
 
 .card-body {
+  padding-left: 0;
+}
 
+.card-text {
+  padding-left: 4px;
+  font-size: .925rem;
+  line-height: 1.25rem;
 }
 
 .filterDiv {
@@ -126,26 +135,20 @@ color: rgba(0, 0, 0, 0.5);
   display: block;
 }
 
-#submit {
-  padding: 20px;
-  background-color: #A61C3C;
-  color: #fff;
-  margin: 20px;
-  border-radius: 5px;
-  font-weight: bolder;
-  align-content: center;
-}
-
 #filters {
   padding-left: 10px;
   padding-top: 10px;
 }
 
 #filters button {
-  border-radius: 5px;
-  border: 1px solid black;
-  padding: 2.5px;
-  margin: 1px;
+  font-size: 2vh;
+  border-radius: 1rem;
+  border: 5px solid #26408B;
+  margin: .01rem;
+  color: black;
+  background-color: #fff;
+  font-style: normal;
+  padding: 0.3rem;
 }
 
 #filters button .active {
@@ -154,10 +157,10 @@ color: rgba(0, 0, 0, 0.5);
 }
 
 #filters button:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: darkgray;
 }
 
-#filters button:focus {
+#filters button:active {
   background-color: #A61C3C;
   color: white;
 }
