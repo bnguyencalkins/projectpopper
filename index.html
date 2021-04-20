@@ -11,52 +11,59 @@
 	<link rel="stylesheet" href="css/spotlight.css">
 	<link rel="icon" type="image/x-icon" href=""/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="./js/papaparse.js"></script>
 </head>
 
 <body onload="all()">
-<header class="container-fluid ">
-	<div class="row">
-		<div class="col-2"><img class="img img-fluid" src="img/placeholder.png"></div>
-		<div class="col-8"><div class="row justify-content-start"><h1 class=" text-white">TC Popper</h1></div><div class="row"><p class="subtitle">Take a bite outta' Tech Comm!</p></div>
-	
-	</div>
-	
-	<div class="text-center">
-		<button id="submit" onclick="parent.location='submission.html'">Submit a Project</button>
-	</div>
+<header class="container-fluid">
+	<nav class="navbar navbar-expand-lg">
+		<a id = "navbar-title">TC Popper 
+			<a id = "navbar-subtitle">
+				Take a bite outta' Tech Comm
+			</a>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html">FAQ</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./submission.html">Submit a Project</a>
+			</li>
+		  </ul>
+		  <div class="row" id="filters">
+			<span class="m-2">Filters</span>
+				<div> 
+					<button class="btn" onclick="filterSelection('all')">All projects</button> 
+					<button class="btn" onclick="filterSelection('InternetTechnologies')">Internet Technology</button> 
+			   		<button class="btn" onclick="filterSelection('Bioscience')">Bioscience</button>
+			   		<button class="btn" onclick="filterSelection('Law')">Law</button>
+			   		<button class="btn" onclick="filterSelection('VisualDesign')">Visual Design</button>
+			</div>
+		</div>
+		</div>
+	  </nav>
 </header>
 
 <div class="container-fluid"> <!--Containing div, ensures flexible display-->
 	<main>
 <!--Filters row-->
-<div class="row" id="filters">
-	 <span class="m-2">Filters</span> 
-	 	<button class="active" onclick="filterSelection('all')">All projects</button> 
-	 	<button onclick="filterSelection('InternetTechnologies')">Internet Technology</button> 
-		<button onclick="filterSelection('Bioscience')">Bioscience</button>
-		<button onclick="filterSelection('Law')">Law</button>
-		<button onclick="filterSelection('VisualDesign')">Visual Design</button>
-</div>
 
-<!-- Index row with submit, about, and filters-->
-<div class="container mb-5 text-center">
-	<div id="indexDiv" class="row d-none">
-		<ul class="list-group text-center">
-			<li class="list-group-item active"><a href="#">Homepage</a></li>
-			<li class="list-group-item"><a href="about.html">About this Site</a></li>
-			<li class="list-group-item"><a href="#!">Filters</a></li>
-		  </ul>
-		  <div>
-			  <button onclick = "filter('InternetTechnologies')">Internet Technology</button>
-		  </div>
-	</div>
-</div>
 
 <!--Project Box -->
-	<div class="row justify-content-center">
-		<div class="col-md-8 col-xs-12"
+	<div class="row">
+		<div class="col-md-9 col-xs-12"
 		id ="holder">
 
 		</div>
