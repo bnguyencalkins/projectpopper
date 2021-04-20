@@ -1,19 +1,13 @@
-function index() {
-    box = document.getElementById('indexDiv');
-    if (box.classList.contains("d-none")) {
-        box.classList.add("d-block");
-        box.classList.remove("d-none");
-    }
-    else {
-        box.classList.remove("d-block");
-        box.classList.add("d-none");
-    }
-
+function all() {
+    document.getElementById('all').click();
 }
 
+/* sets up link to Google Sheet file */
 const logLink = 'https://docs.google.com/spreadsheets/d/1Tnnik4Ej7NycIFd-F6RrMjHqBUp3fzXoBRGx2PqEc9E/export?format=csv&grid=0';
 
+/* Sets global variable result- a copy of Google Sheets data */
 let result;
+
 /* Papa Parsing LOG file */
 const csvData = Papa.parse(logLink, {
     download: true,
@@ -35,12 +29,12 @@ const csvData = Papa.parse(logLink, {
         }
       },
     complete: function(result) {
-        console.log(result);
         data = result.data;
         makeCards(data);
     }
 });
 
+/* Starts to make cards from all entries on the Sheet */
 function makeCards(data) {
     for (i = 0; i < data.length; i++) {
         // Name all of the variables from the Google Sheet data
@@ -48,6 +42,7 @@ function makeCards(data) {
         var author = document.createTextNode(data[i].Author);
         var date = document.createTextNode(data[i].Date);
         var field = document.createTextNode(data[i].Field);
+        var fieldClass = data[i].Field.split(" ",).join("");
         var overview = document.createTextNode(data[i].Overview);
         var success = document.createTextNode(data[i].Success);
         var changes = document.createTextNode(data[i].Changes);
@@ -58,7 +53,7 @@ function makeCards(data) {
 
         // Creates a div element, then gives it a class (card)
         var card = document.createElement("DIV");
-        card.classList.add("card");
+        card.classList.add("card", "filterDiv", "show");
         // Creates card body div, then card-text p
         var cardBody = document.createElement("DIV");
         cardBody.classList.add("card-body");
@@ -95,10 +90,47 @@ function makeCards(data) {
         card.appendChild(badge);
         card.appendChild(cardBody);
 
+        // Add field class to card to be able to sort easier
+        card.classList.add(fieldClass);
 
         // Adds card to destination
         destination.appendChild(card);
-        
-
     }
+}
+
+// Removes class to hide with filter
+function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Show filtered elements by adding class
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
 }
