@@ -114,7 +114,16 @@ color: rgba(0, 0, 0, 0.5);
 }
 
 .card-body {
-  
+
+}
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
 }
 
 #submit {
@@ -127,6 +136,32 @@ color: rgba(0, 0, 0, 0.5);
   align-content: center;
 }
 
+#filters {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#filters button {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 2.5px;
+  margin: 1px;
+}
+
+#filters button .active {
+  background-color: #A61C3C;
+  color: white;
+}
+
+#filters button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#filters button:focus {
+  background-color: #A61C3C;
+  color: white;
+}
+
 .badge-secondary {
   background-color: #26408B;
   min-width: 75px;
@@ -137,4 +172,16 @@ color: rgba(0, 0, 0, 0.5);
   background-color: #A61C3C;
   min-width: 75px;
   margin-left: 5px;
+}
+
+#QA {
+
+}
+
+#QA div h2{
+  padding: 5px;
+}
+
+#QA div p {
+  padding: 15px;
 }
