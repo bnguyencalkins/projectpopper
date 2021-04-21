@@ -17,13 +17,20 @@ body {
 }
 
 header {
-  background-color: #26408B;
-  padding-top: 10px;
 }
 
 /* Customizes Navbar */
 .navbar {
   color: #fff;
+  background-image: url(../img/navbar-banner.png); /* Will create the parallax effect to match department google site */
+  min-height: 150px;
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  
 }
 
 #navbar-title {
@@ -63,7 +70,7 @@ header {
 }
 
 .nav-link:hover {
-  background-color: #A61C3C;
+  background-color: #212121;
 }
 
 .list-group-item {
@@ -127,6 +134,10 @@ text-align: center;
   line-height: 1.25rem;
 }
 
+.btn {
+  border: none;
+}
+
 .filterDiv {
   display: none; /* Hidden by default */
 }
@@ -144,7 +155,6 @@ text-align: center;
 #filters button {
   font-size: 2vh;
   border-radius: 1rem;
-  border: 5px solid #26408B;
   margin: .01rem;
   color: black;
   background-color: #fff;
@@ -158,7 +168,8 @@ text-align: center;
 }
 
 #filters button:hover {
-  background-color: darkgray;
+  background-color: #212121;
+  color: white;
 }
 
 #filters button:active {
