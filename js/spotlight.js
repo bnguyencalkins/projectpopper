@@ -19,12 +19,12 @@ const csvData = Papa.parse(logLink, {
           case 'Timestamp': { return 'Date'; break; }
           case 'What is your name?': { return 'Author'; break; }
           case 'What is the Title of your Project?': { return 'Title'; break; }
-          case 'What field of study does your project prioritize? [Choices]': { return 'Field'; break; }
+          case 'What field of study does your project prioritize?': { return 'Field'; break; }
           case 'What\'s a short description of your project?': { return 'Overview'; break; }
           case 'Is there anything you would have done differently? If so, what?': { return 'Changes'; break; }
           case 'Approved': {return 'Approved'; break}
           case 'How is this project related to Technical Communication?': {return 'Related'; break;}
-          case 'Please provide a short outline of your process': {return 'Outline'; break;}
+          case 'Please provide a short outline of your process to create your project': {return 'Outline'; break;}
           case 'Provide a link to your project, if you\'d like.': {return 'Link'; break;}
         }
       },
@@ -48,7 +48,7 @@ function makeCards(data) {
         var author = document.createTextNode(data[i].Author);
         var date = document.createTextNode(data[i].Date);
         var field = document.createTextNode(data[i].Field);
-            var fieldClass = data[i].Field.split(" ",).join("");
+          var fieldClass = data[i].Field.split(" ").join("");
         var overview = document.createTextNode(data[i].Overview);
         var changes = document.createTextNode(data[i].Changes);
         var approval = document.createTextNode(data[i].Approved);
@@ -116,9 +116,7 @@ function makeCards(data) {
         card.appendChild(h1);
         card.appendChild(badge);
         card.appendChild(cardBody);
-
-        // Add field class to card to be able to sort easier
-        card.classList.add(fieldClass);
+       card.classList.add(fieldClass); // Add field class to card to be able to sort easier
 
         // Adds card to destination
         destination.appendChild(card);
