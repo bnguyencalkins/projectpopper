@@ -24,6 +24,8 @@ const csvData = Papa.parse(logLink, {
           case 'Is there anything you would have done differently? If so, what?': { return 'Changes'; break; }
           case 'Approved': {return 'Approved'; break}
           case 'How is this project related to Technical Communication?': {return 'Related'; break;}
+          case 'Please provide a short outline of your process': {return 'Outline'; break;}
+          case 'Provide a link to your project, if you\'d like.': {return 'Link'; break;}
         }
       },
     complete: function(result) {
@@ -40,6 +42,7 @@ const csvData = Papa.parse(logLink, {
 /* Starts to make cards from all entries on the Sheet */
 function makeCards(data) {
     for (i = 0; i < data.length; i++) {
+
         // Name all of the variables from the Google Sheet data
         var title = document.createTextNode(data[i].Title);
         var author = document.createTextNode(data[i].Author);
@@ -47,9 +50,11 @@ function makeCards(data) {
         var field = document.createTextNode(data[i].Field);
             var fieldClass = data[i].Field.split(" ",).join("");
         var overview = document.createTextNode(data[i].Overview);
-        var success = document.createTextNode(data[i].Success);
         var changes = document.createTextNode(data[i].Changes);
         var approval = document.createTextNode(data[i].Approved);
+        var related = document.createTextNode(data[i].Related);
+        var outline = document.createTextNode(data[i].Outline);
+        var link = document.createTextNode(data[i].Link);
 
         // Moderation enabled: requires true approved status
         
@@ -63,15 +68,34 @@ function makeCards(data) {
         // Creates card body div, then card-text p
         var cardBody = document.createElement("DIV");
         cardBody.classList.add("card-body");
-        // Creates Overview h3, then overview body
+
+        // Creates Overview h3, then overview text
         cardBody.innerHTML += '<h3>Overview</h3>';
         p = document.createElement("P");
         p.classList.add("card-text");
         p.appendChild(overview);
         cardBody.appendChild(p);
+
+        // Creates outline
+        cardBody.innerHTML += '<h3>Outline</h3>';
+        var outlineP = document.createElement("P");
+        outlineP.classList.add("card-text");
+        outlineP.appendChild(outline);
+        cardBody.appendChild(outlineP);
+
+        // Creates Related elaboration
+        cardBody.innerHTML += '<h3>How is this related to Technical Communication?</h3>';
+        var outlineRelated = document.createElement("P");
+        outlineRelated.classList.add("card-text");
+        outlineRelated.appendChild(related);
+        cardBody.appendChild(outlineRelated);
+
         // Creates Success? h3, then success and changes answers
         cardBody.innerHTML += "<h3>Would you have done anything differently?</h3>";
-        cardBody.appendChild(changes);
+        var changesP = document.createElement("P");
+        changesP.classList.add("card-text")
+        changesP.appendChild(changes);
+        cardBody.appendChild(changesP);
         
         //Creates span badge for field
         var badge = document.createElement("SPAN");
@@ -85,7 +109,7 @@ function makeCards(data) {
         //creates subtitle above h1
         var subtitle = document.createElement("P");
         subtitle.classList.add("card-subtitle");
-        subtitle.appendChild(author);
+        subtitle.appendChild(author, date);
 
         // Add everything to card
         card.appendChild(subtitle);
