@@ -11,35 +11,39 @@
 	<link rel="stylesheet" href="css/spotlight.css">
 	<link rel="icon" type="image/x-icon" href=""/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="./js/papaparse.js"></script>
 
 </head>
 
 <body>
 	<header class="container-fluid ">
-		<div class="row">
-			<div class="col-2"><img class="img img-fluid" src="img/placeholder.png" ></div>
-			<div class="col-8"><div class="row justify-content-start"><h1 class=" text-white">TC Popper</h1></div><div class="row"><p class="subtitle">Take a bite outta' Tech Comm!</p></div>
-		
-		</div>
-		
-		<div class="text-center">
-			<button id="submit" onclick="parent.location='submission.html'">Submit a Project</button>
-		</div>
+		<nav class="navbar navbar-expand-lg">
+			<a id = "navbar-title">TC Popper </a>
+				<a id = "navbar-subtitle">
+					Take a bite outta' Tech Comm
+				</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="index.html">Home </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#!">About <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./submission.html">Submit a Project</a>
+				</li>
+			  </ul>
+			</div>
+		  </nav>
 	</header>
 	<main class="container-fluid">
 	
-			<!--Navigation button row-->
-	<div class="row justify-content-center">
-
-		<button class="navs" onclick="index()" data-toggle="tooltip"
-        data-placement="top" title="Toggle index view">
-			<i class="index"> </i>
-		</button>
-		
-	</div>
-
 	<!-- Index row with submit, about, and filters-->
 <div class="container mb-5 text-center">
 	<div id="indexDiv" class="row d-none">
