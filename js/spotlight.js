@@ -61,6 +61,9 @@ function makeCards(data) {
         // Creates destination- the div ID 'holder for easier reference
         var destination = document.getElementById('holder');
 
+        // updates array count on page, id = count
+        var count = document.getElementById("count");
+        count.innerHTML = "There are " + data.length + " projects in the TC Popper archives.";
 
         // Creates a div element, then gives it a class (card)
         var card = document.createElement("DIV");
