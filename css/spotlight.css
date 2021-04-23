@@ -11,6 +11,11 @@ h2 {
   font-size: 3.5vh;
 }
 
+h3 {
+  font-size: 3vh;
+
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 20px;
@@ -30,22 +35,10 @@ header {
   background-position: center;
   padding-bottom: 10px;
   padding-left: 10px;
-  
 }
 
-#navbar-title {
-  font-size: 6.5vh;
-  display: block;
-  font-family: 'Coda Caption', sans-serif;
-}
-
-#navbar-subtitle {
-  font-size: 2vh;
-  padding-left: 2.25rem;
-}
-
-.navbar a {
-  color: #fff;
+.navbar-toggler-icon {
+  background-image: url(../img/navbar-toggler-icon.png);
 }
 
 .navbar-toggler {
@@ -62,6 +55,20 @@ header {
   border: none;
 }
 
+#navbar-title {
+  font-size: 6.5vh;
+  display: block;
+  font-family: 'Coda Caption', sans-serif;
+}
+
+#navbar-subtitle {
+  font-size: 2vh;
+  padding-left: 2.25rem;
+}
+
+.navbar a {
+  color: #fff;
+}
 
 .navbar-nav ul li{
   font-family: Arial, Helvetica, sans-serif;
@@ -99,7 +106,7 @@ header {
   background-color: #ffff;
   box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.175) !important;
   padding: 10px;
-  border: solid #26408B 2px;
+  border: solid #A61C3C 2px;
   border-radius: 20px;
   min-height: 50vh;
   width: 100%;
@@ -134,8 +141,17 @@ text-align: center;
   line-height: 1.25rem;
 }
 
-.btn {
+.btn, .btn-primary {
   border: none;
+  background-color: #ffcc33;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: #A61C3C;
+  color: white;
 }
 
 .filterDiv {
@@ -178,15 +194,16 @@ text-align: center;
 }
 
 .badge-secondary {
-  background-color: #26408B;
-  min-width: 75px;
-  margin-left: 5px;
-}
-
-.badge-danger {
   background-color: #A61C3C;
   min-width: 75px;
-  margin-left: 5px;
+  margin: 5px;
+}
+
+.badge-primary {
+  background-color: #ffcc33;
+  color: black;
+  min-width: 75px;
+  margin: 5px;
 }
 
 #QA {
@@ -198,5 +215,10 @@ text-align: center;
 }
 
 #QA div p {
-  padding: 15px;
+  margin-bottom: 5px;
+}
+
+/* Very important, customizes archives div box which displays object results */
+#holder {
+  min-height: 250px;
 }
