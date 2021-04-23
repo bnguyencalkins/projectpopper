@@ -11,9 +11,6 @@
 	<link rel="stylesheet" href="css/spotlight.css">
 	<link rel="icon" type="image/x-icon" href=""/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="./js/papaparse.js"></script>
 </head>
@@ -49,24 +46,42 @@
 	  </nav>
 </header>
 
-<div class="container-fluid"> <!--Containing div, ensures flexible display-->
-	<main>
-		<!-- Filters row-->
-		<div class="row" id="filters">
-			<span class="m-2">Filters</span>
-				<div> 
-					<button class="btn" onclick="filterSelection('all')">All projects</button> 
-					<button class="btn" onclick="filterSelection('InternetTechnologies')">Internet Technology</button> 
-			   		<button class="btn" onclick="filterSelection('BiologicalSciences')">Bioscience</button>
-			   		<button class="btn" onclick="filterSelection('Law')">Law</button>
-			   		<button class="btn" onclick="filterSelection('Copyediting')">Copyediting</button>
-			   		<button class="btn" onclick="filterSelection('EnvironmentalSciences')">Environmental Sciences</button>
-					
-			</div>
-		</div>
 
+	<main>
 <!--Project Box -->
-<h1 id="count"></h1>
+<div class="container">
+<h1 class="mt-4">Archives</h1>
+<h2 id="count" class="mt-4"></h2>
+<!-- Filters row-->
+<div class="row pl-5">
+	<div class="dropdown">
+		<button class="btn btn-secondary dropdown-toggle"
+				type="button" id="dropdownMenu1" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+		  Filters
+		</button>
+		<div class="dropdown-menu" aria-labelledby="FiltersDropDown">
+		  <a class="dropdown-item" onclick="filterSelection('all')">All projects</a>
+		  <h6 class="dropdown-header">Fields</h6>
+		  <a class="dropdown-divider"></a>
+		  <a class="dropdown-item" onclick="filterSelection('BiologicalScience')">Biological Sciences</a>
+		  <a class="dropdown-item" onclick="filterSelection('InternetTechnologies')">Internet Technologies</a>
+		  <a class="dropdown-item" onclick="filterSelection('Law')">Law</a>
+		  <a class="dropdown-item" onclick="filterSelection('Copyediting')">Copyediting</a>
+		  <a class="dropdown-item" onclick="filterSelection('EnvironmentalScience')">Environmental Science</a>
+		  <h6 class="dropdown-header">Genres</h6>
+		  <a class="dropdown-diver"></a>
+		  <a class="dropdown-item" onclick="filterSelection('Academicresearchpaper')">Research Papers</a>
+		  <a class="dropdown-item" onclick="filterSelection('Proposal')">Proposals</a>
+		  <a class="dropdown-item" onclick="filterSelection('Website')">Websites</a>
+		  <a class="dropdown-item" onclick="filterSelection('Programming')">Programs</a>
+		  <a class="dropdown-item" onclick="filterSelection('Video')">Videos</a>
+		  <a class="dropdown-item" onclick="filterSelection('Podcast')">Podcasts</a>
+		  <a class="dropdown-item" onclick="filterSelection('Brochure')">Brochures</a>
+		  <a class="dropdown-item" onclick="filterSelection('Other')">Other</a>
+		</div>
+	</div>
+</div>
 	<div class="row">
 		<div class="col-md-9 col-xs-12"
 		id ="holder">
@@ -74,12 +89,14 @@
 		</div>
 	</div>	
 
+</div>
 	</main>
 
 
 	<footer></footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/spotlight.js"></script>
 </div>
 </body>
