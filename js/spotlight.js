@@ -26,6 +26,8 @@ const csvData = Papa.parse(logLink, {
           case 'How is this project related to Technical Communication?': {return 'Related'; break;}
           case 'Please provide a short outline of your process to create your project': {return 'Outline'; break;}
           case 'Provide a link to your project, if you\'d like.': {return 'Link'; break;}
+          case 'What genre is your project?': {return 'Genre'; break; } 
+          case 'What class was this project for?': {return 'Class'; break; }
         }
       },
     complete: function(result) {
@@ -41,6 +43,7 @@ const csvData = Papa.parse(logLink, {
 
 /* Starts to make cards from all entries on the Sheet */
 function makeCards(data) {
+  
     for (i = 0; i < data.length; i++) {
 
         // Name all of the variables from the Google Sheet data
@@ -55,7 +58,8 @@ function makeCards(data) {
         var related = document.createTextNode(data[i].Related);
         var outline = document.createTextNode(data[i].Outline);
         var link = document.createTextNode(data[i].Link);
-
+        var genre = document.createTextNode(data[i].Genre)
+          var genreClass = data[i].Genre.split(" ").join("");
         // Moderation enabled: requires true approved status
         
         // Creates destination- the div ID 'holder for easier reference
@@ -105,6 +109,11 @@ function makeCards(data) {
         badge.classList.add("badge", "badge-secondary", "d-inline");
         badge.appendChild(field);
 
+        //creates span badge, primary, for genre
+        var genreBadge = document.createElement("SPAN");
+        genreBadge.classList.add("badge", "d-inline", "badge-primary");
+        genreBadge.appendChild(genre);
+
         //creates h1 Title
         var h1 = document.createElement("H1");
         h1.appendChild(title);
@@ -112,14 +121,16 @@ function makeCards(data) {
         //creates subtitle above h1
         var subtitle = document.createElement("P");
         subtitle.classList.add("card-subtitle");
-        subtitle.appendChild(author, date);
+        subtitle.appendChild(author);
 
         // Add everything to card
         card.appendChild(subtitle);
         card.appendChild(h1);
         card.appendChild(badge);
+        card.appendChild(genreBadge);
         card.appendChild(cardBody);
        card.classList.add(fieldClass); // Add field class to card to be able to sort easier
+       card.classList.add(genreClass);
 
         // Adds card to destination
         destination.appendChild(card);
