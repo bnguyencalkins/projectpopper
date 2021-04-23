@@ -119,13 +119,13 @@ function makeCards(data) {
         h1.appendChild(title);
         
         //creates subtitle above h1
-        var subtitle = document.createElement("P");
+        var subtitle = document.createElement("H3");
         subtitle.classList.add("card-subtitle");
         subtitle.appendChild(author);
 
         // Add everything to card
-        card.appendChild(subtitle);
         card.appendChild(h1);
+        card.appendChild(subtitle);
         card.appendChild(badge);
         card.appendChild(genreBadge);
         card.appendChild(cardBody);
