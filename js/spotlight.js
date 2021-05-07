@@ -72,6 +72,7 @@ function makeCards(data) {
         // Creates a div element, then gives it a class (card)
         var card = document.createElement("DIV");
         card.classList.add("card", "filterDiv", "show");
+
         // Creates card body div, then card-text p
         var cardBody = document.createElement("DIV");
         cardBody.classList.add("card-body");
@@ -104,7 +105,7 @@ function makeCards(data) {
         changesP.appendChild(changes);
         cardBody.appendChild(changesP);
         
-        //Creates span badge for field
+        //Creates span badge, secondary, for field
         var badge = document.createElement("SPAN");
         badge.classList.add("badge", "badge-secondary", "d-inline");
         badge.appendChild(field);
@@ -123,12 +124,29 @@ function makeCards(data) {
         subtitle.classList.add("card-subtitle");
         subtitle.appendChild(author);
 
+        // creates card-footer (for date and link)
+        var cardFooter = document.createElement("DIV");
+        cardFooter.classList.add("card-footer");
+        cardFooter.innerHTML = "Submitted: ";
+        cardFooter.appendChild(date);
+
+        // // Create text node and link
+        // if (link.length > 3) {
+        //   var linkA = document.createElement("A");
+        //   var linkNode = document.createTextNode("Link to project (external)");
+        //   linkA.appendChild(linkNode);
+        //   linkA.title = "Project link";
+        //   linkA.href = link;
+        //   cardFooter.appendChild(linkA);
+        // }
+
         // Add everything to card
         card.appendChild(h1);
         card.appendChild(subtitle);
         card.appendChild(badge);
         card.appendChild(genreBadge);
         card.appendChild(cardBody);
+        card.appendChild(cardFooter);
        card.classList.add(fieldClass); // Add field class to card to be able to sort easier
        card.classList.add(genreClass);
 
