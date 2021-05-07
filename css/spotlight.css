@@ -137,6 +137,10 @@ header {
   line-height: 1.25rem;
 }
 
+.card-footer {
+  font-size: 75%;
+}
+
 .btn, .btn-primary {
   border: none;
   background-color: #ffcc33;
